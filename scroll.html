@@ -65,9 +65,13 @@
     <button id="buttonUp">Click to Go Up</button>
     <script>
 
+        // Create element by targeting its id
+
         let buttonDown = document.getElementById('buttonDown');
         let buttonUp = document.getElementById('buttonUp');
        
+        // create scroll down function and pass argument to the window scroll property, also setting e to prevent default action
+
         const scrollDown = (e) =>{
             e.preventDefault();
             window.scrollTo({
@@ -78,6 +82,7 @@
             console.log('downScroll was fired!');
         }
 
+        // create scroll up function and pass argument to the window scroll property, also setting e to prevent default action
         const scrollUp = (e) =>{
             e.preventDefault();
             window.scrollTo({
@@ -87,6 +92,9 @@
             });
             console.log('upScroll was fired!');
         }
+
+        // listen for click action
+
         buttonDown.addEventListener("click", scrollDown);
         buttonUp.addEventListener("click", scrollUp);
 
