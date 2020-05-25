@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scroll doc</title>
+    <title>Scroll up-down snippet</title>
     <style>
         *{
             box-sizing: border-box;
@@ -70,8 +70,8 @@
             e.preventDefault();
             window.scrollTo({
                 top: 4000,
-                bottom: 0,
-                // behavior: "smooth"
+                left: 0,
+                behavior: "smooth"
             });
             console.log('downScroll was fired!');
         }
@@ -80,7 +80,8 @@
             e.preventDefault();
             window.scrollTo({
                 top: 0,
-                left: 0
+                left: 0,
+                behavior: "smooth"
             });
             console.log('upScroll was fired!');
         }
