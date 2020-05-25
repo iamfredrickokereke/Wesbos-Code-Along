@@ -1,42 +1,41 @@
 
-// // Function definition
-// function calculateBill(billAmount, taxRate) {
-//     let total = billAmount * (1 + taxRate);
-//     console.log('Calculate is running');
-//     return total;
-// }
+// Function definition
+function calculateBill(billAmount, taxRate = 0.13, tipRate = 0.15) {
+
+    // function body
+    console.log('\nBill is running\n');
+    let total = billAmount + (billAmount * taxRate) + (billAmount * tipRate);
+    return total;
+}
+// console.log(total);// scope issues
 
 
-// const fredBill = 1200;
-// const fredTax = 0.2;
+const fredBill = 1200;
+const fredTax = 0.2;
 
 
-// const test = calculateBill(fredBill, fredTax);
+const test = calculateBill(fredBill, fredTax);
 
-// console.log(test, 'test...');
+console.log(test, 'test...');
 
-// // function call and storing in a variable
-// const myTotal = calculateBill(30, 1.4);
-// console.log(myTotal);
-
-
-
-
-// // console.log(total);// scope issues
+// function call and storing in a variable
+const myTotal = calculateBill(30, 1.4);
+console.log(myTotal);
 
 
 
 
 
-function sayHi(params) {
+// always set a default value for your parameters to avoid wrong argument errors
+function sayHi(params = '') {
     return `Hey ${params.toUpperCase()}`;
 }
 
 
-function yell(params) {
+function doctorize(params = '') {
     return `Dr. ${params}`;
 }
 
-const test = yell('fred');
+const result = doctorize();
 
-console.log(test);
+console.log(result);
