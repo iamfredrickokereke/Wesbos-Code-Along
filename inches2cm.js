@@ -15,5 +15,9 @@ function makeBaby(firstname, lastname) {
         age : 0
     }
 
+    console.log(baby);
     return baby;
 }
+
+
+makeBaby('fred', 'okereke')
