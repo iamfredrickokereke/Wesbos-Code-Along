@@ -1,4 +1,6 @@
 
+console.time('code');
+
 // Function definition
 function calculateBill(billAmount, taxRate = 0.13, tipRate = 0.15) {
 
@@ -39,3 +41,6 @@ function doctorize(params = '') {
 const result = doctorize();
 
 console.log(result);
+
+
+console.timeEnd('code');
