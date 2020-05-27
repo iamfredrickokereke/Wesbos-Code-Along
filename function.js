@@ -44,3 +44,48 @@ console.log(result);
 
 
 console.timeEnd('code');
+
+  
+function makeBaby(firstname, lastname) {
+    const baby = {
+        name : `${firstname} ${lastname}`,
+        age : 0
+    }
+
+    console.log(baby);
+    return baby;
+}
+
+makeBaby('fred', 'okereke');
+// const makeBaby = firstname => ({ name : firstname, age: 0});   // not all codes should use fat Arrows
+
+
+// IIFE
+(function add(a,b) {
+    console.log(a, b);
+    return a+b;
+    
+})(2,5)
+
+
+const person = {
+    name: 'fred',
+    age: 32,
+    greet(){
+        console.log(`your name is ${this.name} and you are ${this.age} years old`);
+        
+    },
+    greet1: function () {
+        console.log('i am greet 2');
+        
+    },
+
+    greet2: () => {
+        console.log(`i am greet 3`);
+        
+    }
+}
+
+person.greet();
+person.greet1();
+person.greet2();
