@@ -89,3 +89,5 @@ const person = {
 person.greet();
 person.greet1();
 person.greet2();
+
+//function scope
