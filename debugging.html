@@ -11,6 +11,7 @@
 
     <script>
         console.log('anything goes here');
+        console.count('Run count')
         console.error('an error indicator shors here');
         console.warn('a warning indicator shows here');
         console.table('This displays an object in record format');
@@ -20,6 +21,18 @@
         console.groupCollapsed('This is used to group especially looped objects/arrays, openinig tag');
         console.groupEnd('This is used to group and close especially looped objects/arrays, closing tag');
         
+
+        const data = [
+            {"name": "fred", "sex": "male", "country": "Nigeria"},
+            {"name": "emma", "sex": "male", "country": "Nigeria"},
+            {"name": "charles", "sex": "male", "country": "Nigeria"},
+            {"name": "nonso", "sex": "male", "country": "Nigeria"}
+        ]
+
+        debugger;
+        console.table(data),
+        console.groupCollapsed(data),
+        console.groupEnd(data)
         
         
     </script>
